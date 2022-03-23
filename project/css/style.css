@@ -169,12 +169,23 @@ line-height: 24px;
     min-height: 121px;
     display: flex;
     margin: 0 0 20px 0;
+
   }
+
   .reviews-cart-text{
       margin-left: 20px;
-      padding: 10px;
+      padding: 20px;
       background-color: #EBEBEB;
       border-radius: 10px;
+      position: relative;
+  }
+  .reviews-cart-text:before{
+      content: '';
+    border: 20px solid transparent;
+    border-right: 20px solid #EBEBEB;
+    position: absolute;
+    top: 59px;
+    left: -39px;
   }
   .reviews-cart-text-name{
 
@@ -188,4 +199,7 @@ line-height: 24px;
 border-radius: 50px;
 background-color: #445161;
 
+  }
+  .reviews-cart-text-comment{
+      margin: 0;
   }
