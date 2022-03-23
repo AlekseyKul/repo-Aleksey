@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+}
+body{
+   font-family: Arial;
+}
+.container{
+margin: 0 auto;
+width: 1280px;
+}
+p{
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 10px;
+}
+h2{
+    font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+color: #445161;
+display: inline;
+}
+.header-block{
+    background-color: #445161;
+    width: 100%;
+    height: 323px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+
+}
+
+
+.header-block-content{
+    color: white;
+}
+.header-block-content-h1{
+
+font-weight: 700;
+font-size: 60px;
+margin-bottom: 45px;
+line-height: 69px;
+padding: 0px;
+display: inline;
+}
+.header-block-content-spisok-items{
+font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+list-style-image: url(../img/check.png);
+padding-left: 15px;
+
+}
+
+.header-block-content-img{
+    background-color: white;
+align-self: flex-start;
+margin-top: 25px;
+
+
+
+}
+.content{
+    padding: 50px 50px 50px 50px;
+}
+.about-product{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.about-product-h2{
+    padding-bottom: 16px;
+
+}
+.about-product-video{
+    background-color: #445161;
+    margin-left: 70px;
+}
+.dignity-blok{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.dignityh2{
+display: flex;
+margin: 0 0 40px 0;
+ justify-content: center;
+}
+.dignity-blok-det{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    width: 50%;
+    padding: 0 10px 20px 0;
+    box-sizing: border-box;
+
+
+
+}
+.dignity-blok-text{
+    
+    display: flex;
+    justify-content: start;
+
+
+}
+.dignity-blok-text::before {
+    content: url(../img/plusicon.png);
+    padding-right: 0.5em;
+    /* float: left; */
+  }
+  .screenshotsh2{
+    display: flex;
+    margin: 100px 0 40px 0;
+    justify-content: center;
+
+  }
+  .screenshots-block{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .screenshots-block-cart{
+      min-width: 574px;
+      min-height: 151px;
+      display: flex;
+
+
+  }
+  .cart-jpg{
+      background-color: cornflowerblue;
+  }
+  .screenshots-block-cart-content{
+      margin-left: 10px;
+
+  }
