@@ -7,6 +7,8 @@ body{
 .container{
 margin: 0 auto;
 width: 1280px;
+padding: 0 50px 0 50px;
+box-sizing: border-box;
 }
 p{
 font-weight: 700;
@@ -121,20 +123,72 @@ margin: 0 0 40px 0;
 
   }
   .screenshots-block{
-      display: flex;
-      flex-wrap: wrap;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .screenshots-block-cart{
-      min-width: 574px;
+      width: 564px;
       min-height: 151px;
       display: flex;
-
-
+      margin-bottom: 16px;
+  }
+  .carth3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 16px 0;
   }
   .cart-jpg{
       background-color: cornflowerblue;
   }
   .screenshots-block-cart-content{
       margin-left: 10px;
+
+  }
+  .cart-text{
+
+    font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+  }
+  .reviewsh2{
+    display: flex;
+    margin: 100px 0 40px 0;
+    justify-content: center;
+  }
+  .reviews-block{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .reviews-cart{
+
+    width: 574px;
+    min-height: 121px;
+    display: flex;
+    margin: 0 0 20px 0;
+  }
+  .reviews-cart-text{
+      margin-left: 20px;
+      padding: 10px;
+      background-color: #EBEBEB;
+      border-radius: 10px;
+  }
+  .reviews-cart-text-name{
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #989898;
+    margin: 16px 0 0 0;
+  }
+  .reviews-cart img{
+border-radius: 50px;
+background-color: #445161;
+
+  }
+  .reviews-cart-text-comment{
 
   }
