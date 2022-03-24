@@ -203,3 +203,72 @@ background-color: #445161;
   .reviews-cart-text-comment{
       margin: 0;
   }
+
+  .buyith2{
+    display: flex;
+    margin: 100px 0 40px 0;
+    justify-content: center;
+  }
+  .buyit-carts{
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+
+  }
+  .buyit-carts-cart{
+    width: 300px;
+    background: #445161;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #545454;
+
+  }
+  .carth3{
+    
+    font-family: 'Arial Rounded MT Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    color: #EBEBEB;
+    text-align: center;
+    margin: 0;
+
+
+  }
+  .cart-price{
+    /* display: block; */
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #545454;
+    text-align: center;
+    margin: 0;
+    background-color: #EBEBEB;
+  }
+  .cart-list{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #EBEBEB;
+    list-style-position: inside;
+  }
+  .cart-but-buy{
+    width: 260px;
+    height: 40px;
+    padding: 11px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #545454;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    align-self: center;
+    margin: 10px 0 20px;
+text-transform: uppercase;
+
+  }
