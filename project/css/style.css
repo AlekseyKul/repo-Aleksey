@@ -288,7 +288,7 @@ text-transform: uppercase;
 
   }
   form{
-    width: 50%;
+    width: 500px;
     margin: 0 20px 0 0;
 
 
@@ -296,3 +296,71 @@ text-transform: uppercase;
   .footer-contacti{
     width: 30%;
   }
+  .polevvoda{
+
+    width: 500px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    padding: 0 0 0 10px;
+    color: #445162;
+    border: none;
+    box-sizing: border-box;
+  }
+  textarea{
+    width: 500px;
+height: 170px;
+border: none;
+border-radius: 10px;
+padding: 10px 10px 10px 10px;
+font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+
+  }
+
+.form-btn{
+  width: 140px;
+  height: 40px;
+  padding: 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #545454;
+  background-color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  align-self: center;
+  
+text-transform: uppercase;
+margin: auto;
+border: none;
+
+}
+form{
+  margin-bottom: 40px;
+}
+.footer-contacti-list{
+  font-weight: 700;
+font-size: 16px;
+line-height: 40px;
+color: white;
+list-style-type: none;
+
+/* list-style-image: url(../img/call.png); */
+
+
+margin: 0;
+}
+.footer-contacti-items{
+  background: url("../img/call.png") no-repeat left center;
+  padding-left: 34px;
+}
