@@ -364,3 +364,36 @@ margin: 0;
   background: url("../img/call.png") no-repeat left center;
   padding-left: 34px;
 }
+.footer-contacti-socsete{
+  display: flex;
+justify-content: center;
+} 
+.footer-contacti-socseti-items{
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/iconos.png);
+
+}
+.footer-contacti-socseti-items:nth-child(2){
+  background-position-x: 58px;
+}
+.footer-contacti-socseti-items:nth-child(3){
+  background-position-x: 116px;
+}
+.footer-contacti-socseti-items:nth-child(4){
+  background-position-x: 174px;
+}
+
+.footer-contacti-socseti-items:nth-child(1):hover{
+  background-position-y: 59px;
+}
+.footer-contacti-socseti-items:nth-child(2):hover{
+  background-position-y: 59px;
+}
+.footer-contacti-socseti-items:nth-child(3):hover{
+  background-position-y: 59px;
+}
+.footer-contacti-socseti-items:nth-child(4):hover{
+  background-position-y: 59px;
+}
