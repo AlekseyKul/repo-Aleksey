@@ -67,6 +67,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
+  padding: 40px 0 0 0;
   background-image: url(../img/bg-header.png);
   background-repeat: no-repeat;
 }
@@ -80,13 +81,28 @@ body {
 }
 
 .head-menu-logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.head-menu-logo span {
-  font-family: Raleway;
-  font-size: 34px;
-  color: #fff;
+.head-menu-navbar {
+  height: 64px;
+  width: 637px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0 219px;
 }
 
 .head-menu-navbar-items {
@@ -96,5 +112,25 @@ body {
   text-align: center;
   color: #8c8c8c;
   line-height: 1.57;
+  color: #fff;
+  text-decoration: none;
+}
+
+.head-menu-magazin {
+  width: 18px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.head-menu-logo-span {
+  font-family: raleway;
+  font-weight: 400;
+  font-size: 34px;
+  color: #fff;
+  margin: 0 0 0 2px;
 }
 /*# sourceMappingURL=style.css.map */
