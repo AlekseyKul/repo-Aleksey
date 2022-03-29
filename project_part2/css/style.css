@@ -1,399 +1,100 @@
-body{
-    margin: 0px;
-}
-body{
-   font-family: Arial;
-}
-.container{
-margin: 0 auto;
-width: 1280px;
-padding: 0 50px 0 50px;
-box-sizing: border-box;
-}
-p{
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-margin-bottom: 10px;
-}
-h2{
-    font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-color: #445161;
-display: inline;
-}
-.header-block{
-    background-color: #445161;
-    width: 100%;
-    height: 323px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-sizing: border-box;
-
+@font-face {
+  font-family: "montserrat";
+  src: url(/fonts/montserrat-thin.woff2) format("woff2"), url(/fonts/montserrat-thin.woff) format("woff"), url(/fonts/montserrat-thin.ttf) format("ttf");
+  font-weight: 100;
+  font-style: normal;
 }
 
-
-.header-block-content{
-    color: white;
-}
-.header-block-content-h1{
-
-font-weight: 700;
-font-size: 60px;
-margin-bottom: 45px;
-line-height: 69px;
-padding: 0px;
-display: inline;
-}
-.header-block-content-spisok-items{
-font-weight: 400;
-font-size: 20px;
-line-height: 36px;
-list-style-image: url(../img/check.png);
-padding-left: 15px;
-
+@font-face {
+  font-family: "montserrat";
+  src: url(/fonts/montserrat-light.woff2) format("woff2"), url(/fonts/montserrat-light.woff) format("woff"), url(/fonts/montserrat-light.ttf) format("ttf");
+  font-weight: 200;
+  font-style: normal;
 }
 
-.header-block-content-img{
-    background-color: white;
-align-self: flex-start;
-margin-top: 25px;
-
-
-
+@font-face {
+  font-family: "montserrat";
+  src: url(/fonts/montserrat-regular.woff2) format("woff2"), url(/fonts/montserrat-regular.woff) format("woff"), url(/fonts/montserrat-regular.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
 }
-.content{
-    padding: 50px 50px 50px 50px;
-}
-.about-product{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-.about-product-h2{
-    padding-bottom: 16px;
 
-}
-.about-product-video{
-    background-color: #445161;
-    margin-left: 70px;
-}
-.dignity-blok{
-    display: flex;
-    flex-wrap: wrap;
-
-
-}
-.dignityh2{
-display: flex;
-margin: 0 0 40px 0;
- justify-content: center;
-}
-.dignity-blok-det{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    width: 50%;
-    padding: 0 10px 20px 0;
-    box-sizing: border-box;
-
-
-
-}
-.dignity-blok-text{
-    
-    display: flex;
-    justify-content: start;
-
-
-}
-.dignity-blok-text::before {
-    content: url(../img/plusicon.png);
-    padding-right: 0.5em;
-    /* float: left; */
-  }
-  .screenshotsh2{
-    display: flex;
-    margin: 100px 0 40px 0;
-    justify-content: center;
-
-  }
-  .screenshots-block{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .screenshots-block-cart{
-      width: 564px;
-      min-height: 151px;
-      display: flex;
-      margin-bottom: 16px;
-  }
-  .carth3{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    margin: 0 0 16px 0;
-  }
-  .cart-jpg{
-      background-color: cornflowerblue;
-  }
-  .screenshots-block-cart-content{
-      margin-left: 10px;
-
-  }
-  .cart-text{
-
-    font-weight: 700;
-font-size: 13px;
-line-height: 24px;
-  }
-  .reviewsh2{
-    display: flex;
-    margin: 100px 0 40px 0;
-    justify-content: center;
-  }
-  .reviews-block{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-  .reviews-cart{
-
-    width: 574px;
-    min-height: 121px;
-    display: flex;
-    margin: 0 0 20px 0;
-
-  }
-
-  .reviews-cart-text{
-      margin-left: 20px;
-      padding: 20px;
-      background-color: #EBEBEB;
-      border-radius: 10px;
-      position: relative;
-  }
-  .reviews-cart-text:before{
-      content: '';
-    border: 20px solid transparent;
-    border-right: 20px solid #EBEBEB;
-    position: absolute;
-    top: 59px;
-    left: -39px;
-  }
-  .reviews-cart-text-name{
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: #989898;
-    margin: 16px 0 0 0;
-  }
-  .reviews-cart img{
-border-radius: 50px;
-background-color: #445161;
-
-  }
-  .reviews-cart-text-comment{
-      margin: 0;
-  }
-
-  .buyith2{
-    display: flex;
-    margin: 100px 0 40px 0;
-    justify-content: center;
-  }
-  .buyit-carts{
-display: flex;
-justify-content: space-around;
-align-items: flex-end;
-
-  }
-  .buyit-carts-cart{
-    width: 300px;
-    background: #445161;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #545454;
-
-  }
-  .carth3{
-    
-    font-family: 'Arial Rounded MT Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 50px;
-    color: #EBEBEB;
-    text-align: center;
-    margin: 0;
-
-
-  }
-  .cart-price{
-    /* display: block; */
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    color: #545454;
-    text-align: center;
-    margin: 0;
-    background-color: #EBEBEB;
-  }
-  .cart-list{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #EBEBEB;
-    list-style-position: inside;
-  }
-  .cart-but-buy{
-    width: 260px;
-    height: 40px;
-    padding: 11px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    color: #545454;
-    background-color: #EBEBEB;
-    border-radius: 8px;
-    text-decoration: none;
-    text-align: center;
-    box-sizing: border-box;
-    display: block;
-    align-self: center;
-    margin: 10px 0 20px;
-text-transform: uppercase;
-
-  }
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    background-color: #445161;
-
-  }
-  .footerh2{
-    width: 100%;
-    display: flex;
-    margin: 40px 0 20px 0;
-    justify-content: center;
-    color: white;
-
-  }
-  form{
-    width: 500px;
-    margin: 0 20px 0 0;
-
-
-  }
-  .footer-contacti{
-    width: 30%;
-  }
-  .polevvoda{
-
-    width: 500px;
-    height: 40px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    border-radius: 10px;
-    margin: 0 0 20px 0;
-    padding: 0 0 0 10px;
-    color: #445162;
-    border: none;
-    box-sizing: border-box;
-  }
-  textarea{
-    width: 500px;
-height: 170px;
-border: none;
-border-radius: 10px;
-padding: 10px 10px 10px 10px;
-font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    box-sizing: border-box;
-    margin: 0 0 20px 0;
-
-  }
-
-.form-btn{
-  width: 140px;
-  height: 40px;
-  padding: 11px;
+@font-face {
+  font-family: "raleway";
+  src: url(/fonts/raleway-bold.woff2) format("woff2"), url(/fonts/raleway-bold.woff) format("woff"), url(/fonts/raleway-bold.ttf) format("ttf");
   font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  color: #545454;
-  background-color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
-  box-sizing: border-box;
-  display: block;
-  align-self: center;
-  
-text-transform: uppercase;
-margin: auto;
-border: none;
-
+  font-style: normal;
 }
-form{
-  margin-bottom: 40px;
-}
-.footer-contacti-list{
-  font-weight: 700;
-font-size: 16px;
-line-height: 40px;
-color: white;
-list-style-type: none;
 
-/* list-style-image: url(../img/call.png); */
-
-
-margin: 0;
+@font-face {
+  font-family: "raleway";
+  src: url(/fonts/raleway-extrabold.woff2) format("woff2"), url(/fonts/raleway-extrabold.woff) format("woff"), url(/fonts/raleway-extrabold.ttf) format("ttf");
+  font-weight: 800;
+  font-style: normal;
 }
-.footer-contacti-items{
-  background: url("../img/call.png") no-repeat left center;
-  padding-left: 34px;
+
+@font-face {
+  font-family: "raleway";
+  src: url(/fonts/raleway-medium.woff2) format("woff2"), url(/fonts/raleway-medium.woff) format("woff"), url(/fonts/raleway-medium.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
 }
-.footer-contacti-socsete{
+
+@font-face {
+  font-family: "raleway";
+  src: url(/fonts/raleway-regular.woff2) format("woff2"), url(/fonts/raleway-regular.woff) format("woff"), url(/fonts/raleway-regular.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url(/fonts/raleway-semibold.woff2) format("woff2"), url(/fonts/raleway-semibold.woff) format("woff"), url(/fonts/raleway-semibold.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.head {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/bg-header.png);
+  background-repeat: no-repeat;
+}
+
+.head-menu {
+  width: 1170px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-justify-content: center;
-} 
-.footer-contacti-socseti-items{
+}
+
+.head-menu-logo {
   display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url(../img/iconos.png);
-
-}
-.footer-contacti-socseti-items:nth-child(2){
-  background-position-x: 58px;
-}
-.footer-contacti-socseti-items:nth-child(3){
-  background-position-x: 116px;
-}
-.footer-contacti-socseti-items:nth-child(4){
-  background-position-x: 174px;
 }
 
-.footer-contacti-socseti-items:nth-child(1):hover{
-  background-position-y: 59px;
+.head-menu-logo span {
+  font-family: Raleway;
+  font-size: 34px;
+  color: #fff;
 }
-.footer-contacti-socseti-items:nth-child(2):hover{
-  background-position-y: 59px;
+
+.head-menu-navbar-items {
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #8c8c8c;
+  line-height: 1.57;
 }
-.footer-contacti-socseti-items:nth-child(3):hover{
-  background-position-y: 59px;
-}
-.footer-contacti-socseti-items:nth-child(4):hover{
-  background-position-y: 59px;
-}
+/*# sourceMappingURL=style.css.map */

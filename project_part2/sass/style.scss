@@ -1,1 +1,80 @@
-@import "fonts";
+@import "_fonts";
+$whidts: 1170px;
+
+@mixin zagolovok-h1 {
+    font: {
+        family: releway;
+        size: 52px;
+        weight: 800;
+    }
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+@mixin zagolovok-h2 {
+    font: {
+        family: releway;
+        size: 30px;
+        weight: 600;
+    }
+    text-align: center;
+    color: #555;
+    margin: 0;
+}
+@mixin zagolovok-h3 {
+    font: {
+        family: montserrat;
+        size: 16px;
+        weight: 300;
+    }
+    text-align: center;
+    color: #8c8c8c;
+    line-height: 1.75;
+    margin: 0;
+}
+@mixin bodytext {
+    font: {
+        family: montserrat;
+        size: 14px;
+        weight: 300;
+    }
+    text-align: center;
+    color: #8c8c8c;
+    line-height: 1.57;
+}
+body {
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    width: $whidts;
+}
+
+.head {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+
+    &-menu {
+        width: $whidts;
+        height: 56px;
+
+        display: flex;
+
+        &-logo {
+            display: block;
+        }
+
+        &-logo span {
+            font-family: Raleway;
+            font-size: 34px;
+            color: #fff;
+        }
+
+        &-navbar-items {
+            @include bodytext;
+        }
+    }
+}
