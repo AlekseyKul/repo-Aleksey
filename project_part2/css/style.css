@@ -1,54 +1,54 @@
 @font-face {
-  font-family: "montserrat";
+  font-family: montserrat;
   src: url(/fonts/montserrat-thin.woff2) format("woff2"), url(/fonts/montserrat-thin.woff) format("woff"), url(/fonts/montserrat-thin.ttf) format("ttf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "montserrat";
+  font-family: montserrat;
   src: url(/fonts/montserrat-light.woff2) format("woff2"), url(/fonts/montserrat-light.woff) format("woff"), url(/fonts/montserrat-light.ttf) format("ttf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "montserrat";
+  font-family: montserrat;
   src: url(/fonts/montserrat-regular.woff2) format("woff2"), url(/fonts/montserrat-regular.woff) format("woff"), url(/fonts/montserrat-regular.ttf) format("ttf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "raleway";
+  font-family: raleway;
   src: url(/fonts/raleway-bold.woff2) format("woff2"), url(/fonts/raleway-bold.woff) format("woff"), url(/fonts/raleway-bold.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "raleway";
+  font-family: raleway;
   src: url(/fonts/raleway-extrabold.woff2) format("woff2"), url(/fonts/raleway-extrabold.woff) format("woff"), url(/fonts/raleway-extrabold.ttf) format("ttf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "raleway";
+  font-family: raleway;
   src: url(/fonts/raleway-medium.woff2) format("woff2"), url(/fonts/raleway-medium.woff) format("woff"), url(/fonts/raleway-medium.ttf) format("ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "raleway";
+  font-family: raleway;
   src: url(/fonts/raleway-regular.woff2) format("woff2"), url(/fonts/raleway-regular.woff) format("woff"), url(/fonts/raleway-regular.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "raleway";
+  font-family: raleway;
   src: url(/fonts/raleway-semibold.woff2) format("woff2"), url(/fonts/raleway-semibold.woff) format("woff"), url(/fonts/raleway-semibold.ttf) format("ttf");
   font-weight: 600;
   font-style: normal;
@@ -69,8 +69,8 @@ body {
   width: 100%;
   padding: 40px 0 0 0;
   background-image: url(../img/bg-header.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .head-menu {
@@ -94,6 +94,7 @@ body {
           align-items: center;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+  fill: #fff;
 }
 
 .head-menu-navbar {
@@ -131,7 +132,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #fff;
+  fill: #fff;
 }
 
 .head-menu-search {
@@ -148,6 +149,12 @@ body {
       align-self: center;
 }
 
+.head-menu-search:focus {
+  width: 150px;
+  -webkit-transition: width ls ease-out;
+  transition: width ls ease-out;
+}
+
 .head-menu-formsearch {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -156,6 +163,7 @@ body {
 
 .karusel {
   max-width: 1620px;
+  min-height: 590px;
   margin: 285px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,8 +175,16 @@ body {
       flex-wrap: wrap;
 }
 
-.karusel-dots {
-  width: 100%;
+.karusel-arrow-l {
+  margin: 120px 0 0 50px;
+  opacity: 0.5;
+  fill: #fff;
+}
+
+.karusel-arrow-r {
+  margin: 120px 50px 0 0;
+  opacity: 0.5;
+  fill: #fff;
 }
 
 .karusel-zagolovok {
@@ -208,16 +224,55 @@ body {
 }
 
 .karusel-zagolovok-btn {
+  font-family: raleway;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.64;
+  text-decoration: none;
+  text-transform: uppercase;
   display: block;
   width: 170px;
   background-color: #998675;
-  padding: 17px 38px;
+  padding: 17px;
   border-radius: 3px;
   color: #fff;
   text-align: center;
-  margin: 52px auto 0;
+  margin: 52px auto 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px -3px 0 0 #736357;
+          box-shadow: inset 0px -3px 0 0 #736357;
+}
+
+.karusel-dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.karusel-dots-items {
+  display: block;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  margin: 0 9px;
+  opacity: 0.5;
+  background-color: #fff;
+}
+
+.karusel-dots-items:hover {
+  background-color: transparent;
+  border: solid 2px #d3c1ad;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .head-menu-logo-span {

@@ -57,8 +57,8 @@ body {
     width: 100%;
     padding: 40px 0 0 0;
     background-image: url(../img/bg-header.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
     &-menu {
         width: $whidts;
@@ -71,6 +71,7 @@ body {
             height: 64px;
             align-items: center;
             text-decoration-line: none;
+            fill: #fff;
         }
 
         &-navbar {
@@ -93,7 +94,7 @@ body {
             background-color: transparent;
             border: 0;
             align-self: center;
-            color: #fff;
+            fill: #fff;
         }
         &-search {
             width: 24px;
@@ -106,6 +107,11 @@ body {
             background-color: transparent;
             align-self: center;
         }
+        &-search:focus {
+            width: 150px;
+            transition: width ls ease-out;
+
+        }
         &-formsearch {
             align-self: center;
         }
@@ -113,13 +119,21 @@ body {
 }
 .karusel {
     max-width: 1620px;
+    min-height: 590px;
     margin: 285px auto 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    &-dots {
-        width: 100%;
+    &-arrow-l{
+        margin: 120px 0 0 50px;
+        opacity: 0.5;
+        fill: #fff;
+    }
+    &-arrow-r{
+        margin: 120px 50px 0 0;
+        opacity: 0.5;
+        fill: #fff;
     }
     &-zagolovok {
         width: 590px;
@@ -138,17 +152,44 @@ body {
         color: $white;
     }
     &-zagolovok-btn{
+        font-family: raleway;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.64;
+        text-decoration: none;
+        text-transform: uppercase;
         display: block;
         width: 170px;
-        // width: 170px;
         background-color: #998675;
-        padding: 17px 38px;
+        padding: 17px;
         border-radius: 3px;
         color: $white;
         text-align: center;
-        margin: 52px auto 0;
+        margin: 52px auto 0 auto;
         box-sizing: border-box;
+        border-radius: 3px;
+        box-shadow: inset 0px -3px 0 0 #736357;
         
+    }
+    &-dots{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        &-items{
+            display: block;
+            border-radius: 50%;
+            width: 11px;
+            height: 11px;
+            margin: 0 9px;
+            opacity: 0.5;
+            background-color: #fff;
+        }
+        &-items:hover{
+            background-color: transparent;
+            border: solid 2px #d3c1ad;
+            transform: scale(1.2);
+        }
     }
 }
 .head-menu-logo-span {
