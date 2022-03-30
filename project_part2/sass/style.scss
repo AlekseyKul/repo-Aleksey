@@ -1,9 +1,10 @@
 @import "_fonts";
 $whidts: 1170px;
+$white: #fff;
 
 @mixin zagolovok-h1 {
     font: {
-        family: releway;
+        family: raleway;
         size: 52px;
         weight: 800;
     }
@@ -13,9 +14,9 @@ $whidts: 1170px;
 }
 @mixin zagolovok-h2 {
     font: {
-        family: releway;
-        size: 30px;
-        weight: 600;
+        family: raleway;
+        size: 36px;
+        weight: 500;
     }
     text-align: center;
     color: #555;
@@ -57,19 +58,19 @@ body {
     padding: 40px 0 0 0;
     background-image: url(../img/bg-header.png);
     background-repeat: no-repeat;
+    background-size: contain;
 
     &-menu {
         width: $whidts;
         height: 56px;
-
-
         display: flex;
+        justify-content: space-between;
 
         &-logo {
             display: flex;
             height: 64px;
             align-items: center;
-
+            text-decoration-line: none;
         }
 
         &-navbar {
@@ -77,29 +78,79 @@ body {
             width: 637px;
             display: flex;
             align-items: center;
-            justify-content:space-between; 
+            justify-content: space-between;
             margin: 0 0 0 219px;
-
         }
         &-navbar-items {
             @include bodytext;
             color: #fff;
             text-decoration: none;
         }
-        &-magazin{
+        &-magazin {
             width: 18px;
             height: 24px;
+            padding: 0;
             background-color: transparent;
             border: 0;
             align-self: center;
-
-
-
+            color: #fff;
+        }
+        &-search {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            border: none;
+            background-image: url(../img/icon-serch.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            align-self: center;
+        }
+        &-formsearch {
+            align-self: center;
         }
     }
-
 }
+.karusel {
+    max-width: 1620px;
+    margin: 285px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+    &-dots {
+        width: 100%;
+    }
+    &-zagolovok {
+        width: 590px;
+    }
+    &-zagolovok-h2 {
+        @include zagolovok-h2;
+        color: $white;
+    }
+    &-zagolovok-h1 {
+        @include zagolovok-h1;
+        color: $white;
+        margin: 14px 0 19px 0;
+    }
+    &-zagolovok-text {
+        @include zagolovok-h3;
+        color: $white;
+    }
+    &-zagolovok-btn{
+        display: block;
+        width: 170px;
+        // width: 170px;
+        background-color: #998675;
+        padding: 17px 38px;
+        border-radius: 3px;
+        color: $white;
+        text-align: center;
+        margin: 52px auto 0;
+        box-sizing: border-box;
+        
+    }
+}
 .head-menu-logo-span {
     font-family: raleway;
     font-weight: 400;
