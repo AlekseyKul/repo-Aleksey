@@ -60,12 +60,15 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1170px;
+  width: 1230px;
+  padding: 0 30px 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .head {
   margin: 0;
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
   padding: 40px 0 0 0;
   background-image: url(../img/bg-header.png);
@@ -74,8 +77,7 @@ body {
 }
 
 .head-menu {
-  width: 1170px;
-  height: 56px;
+  min-height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +97,14 @@ body {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   fill: #fff;
+}
+
+.head-menu-logo-span {
+  font-family: raleway;
+  font-weight: 400;
+  font-size: 34px;
+  color: #fff;
+  margin: 0 0 0 2px;
 }
 
 .head-menu-navbar {
@@ -256,6 +266,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 0 0 40px 0;
 }
 
 .karusel-dots-items {
@@ -275,11 +286,55 @@ body {
           transform: scale(1.2);
 }
 
-.head-menu-logo-span {
+.areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.areas-cart {
+  max-width: 270px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 80px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.areas-cart-descr-zagolovok {
+  display: block;
   font-family: raleway;
-  font-weight: 400;
-  font-size: 34px;
-  color: #fff;
-  margin: 0 0 0 2px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #555;
+  margin: 0;
+  margin: 29px 0 19px 0;
+}
+
+.areas-cart-descr-opisanie {
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #8c8c8c;
+  line-height: 1.57;
+}
+
+.areas-cart:svg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  fill: #555;
 }
 /*# sourceMappingURL=style.css.map */

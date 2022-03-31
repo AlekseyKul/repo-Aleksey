@@ -1,6 +1,7 @@
 @import "_fonts";
-$whidts: 1170px;
+$whidts: 1230px;
 $white: #fff;
+$colortext:#555;
 
 @mixin zagolovok-h1 {
     font: {
@@ -19,7 +20,17 @@ $white: #fff;
         weight: 500;
     }
     text-align: center;
-    color: #555;
+    color: $colortext;
+    margin: 0;
+}
+@mixin zagolovok-cart {
+    font: {
+        family: raleway;
+        size: 22px;
+        weight: 600;
+    }
+    text-align: center;
+    color: $colortext;
     margin: 0;
 }
 @mixin zagolovok-h3 {
@@ -49,11 +60,13 @@ body {
 .container {
     margin: 0 auto;
     width: $whidts;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
 }
 
 .head {
     margin: 0;
-    height: 100vh;
+    min-height: 100%;
     width: 100%;
     padding: 40px 0 0 0;
     background-image: url(../img/bg-header.png);
@@ -61,8 +74,7 @@ body {
     background-position: center;
 
     &-menu {
-        width: $whidts;
-        height: 56px;
+        min-height: 56px;
         display: flex;
         justify-content: space-between;
 
@@ -72,7 +84,16 @@ body {
             align-items: center;
             text-decoration-line: none;
             fill: #fff;
+            
+            &-span {
+                font-family: raleway;
+                font-weight: 400;
+                font-size: 34px;
+                color: #fff;
+                margin: 0 0 0 2px;
+            }
         }
+        
 
         &-navbar {
             height: 64px;
@@ -176,6 +197,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        margin: 0 0 40px 0;
         &-items{
             display: block;
             border-radius: 50%;
@@ -192,10 +214,40 @@ body {
         }
     }
 }
-.head-menu-logo-span {
-    font-family: raleway;
-    font-weight: 400;
-    font-size: 34px;
-    color: #fff;
-    margin: 0 0 0 2px;
+.areas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-cart{
+        max-width: 270px;
+        box-sizing: border-box;
+        margin: 80px 0 80px 0;
+        display: flex;
+        flex-direction: column;
+        &-descr-zagolovok{
+            display: block;
+            @include zagolovok-cart;
+            margin: 29px 0 19px 0;
+
+
+        }
+        &-descr-opisanie{
+            @include bodytext;
+        }
+        &:svg {
+            display: block;
+            align-self: center;
+            fill: $colortext;
+        }
+
+
+    }
+    // &-cart::after{
+    //     content: "";
+    //     display: block;
+    //     width: 150px;
+    //     height: 3px;
+    //     background-color: #f1eee9;
+    // }
+
 }
