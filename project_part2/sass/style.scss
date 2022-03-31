@@ -233,21 +233,42 @@ body {
         }
         &-descr-opisanie{
             @include bodytext;
+            margin: 0 0 30px 0;
         }
-        &:svg {
+        &-svg {
             display: block;
             align-self: center;
             fill: $colortext;
+            margin: 0 auto;
         }
 
 
     }
-    // &-cart::after{
-    //     content: "";
-    //     display: block;
-    //     width: 150px;
-    //     height: 3px;
-    //     background-color: #f1eee9;
-    // }
+    &-cart::after{
+        content: "";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background-color: #f1eee9;
+        margin: 0 auto;
+    }
+    &-cart:hover .areas-cart-svg{
+        fill: #c7b299;
+    }
+    &-cart:hover .areas-cart-descr-zagolovok{
+        color: #c7b299;
+    }
+    &-cart:hover::after {
+        background-color: #c7b299;
+    }
 
+}
+.idea{
+    &-h2{
+        @include zagolovok-h2;
+        margin: 83px 0 24px 0;
+    }
+    &-h3{
+        @include zagolovok-h3;
+    }
 }
