@@ -44,6 +44,15 @@ $colortext:#555;
     line-height: 1.75;
     margin: 0;
 }
+@mixin zagolovok-h4 {
+    font: {
+        family: raleway;
+        size: 28px;
+        weight: 400;
+    }
+    color: $white;
+    margin: 0;
+}
 @mixin bodytext {
     font: {
         family: montserrat;
@@ -54,6 +63,37 @@ $colortext:#555;
     color: #8c8c8c;
     line-height: 1.57;
 }
+@mixin btn {
+    font-family: raleway;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.64;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 170px;
+    background-color: #998675;
+    padding: 17px;
+    border-radius: 3px;
+    color: $white;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    
+}
+@mixin btn-hover {
+    
+    background-color:  #736357;
+    
+}
+@mixin btn-activ {
+    
+    background-color:   #998675;
+
+    
+}
+
 body {
     margin: 0;
 }
@@ -62,6 +102,10 @@ body {
     width: $whidts;
     padding: 0 30px 0 30px;
     box-sizing: border-box;
+}
+.container-lite {
+    width: 1230px;
+
 }
 
 .head {
@@ -173,25 +217,16 @@ body {
         color: $white;
     }
     &-zagolovok-btn{
-        font-family: raleway;
-        font-size: 14px;
-        font-weight: 800;
-        line-height: 1.64;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: block;
-        width: 170px;
-        background-color: #998675;
-        padding: 17px;
-        border-radius: 3px;
-        color: $white;
-        text-align: center;
+        @include btn;
         margin: 52px auto 0 auto;
-        box-sizing: border-box;
-        border-radius: 3px;
-        box-shadow: inset 0px -3px 0 0 #736357;
-        
     }
+    &-zagolovok-btn:hover{
+        @include btn-hover();
+    }
+    &-zagolovok-btn:active{
+        @include btn-activ();
+    }
+
     &-dots{
         width: 100%;
         display: flex;
@@ -264,11 +299,74 @@ body {
 
 }
 .idea{
+    background-color: #fbfaf8;
+
     &-h2{
         @include zagolovok-h2;
-        margin: 83px 0 24px 0;
+        margin: 83px auto 24px auto;
     }
     &-h3{
         @include zagolovok-h3;
+        max-width: 770px;
+        margin: 0 auto;
+    }
+    &-img{
+        min-height: 482px;
+        background-image: url(../img/browser-center.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 40px auto 0 auto;
+        
+        // &-left{
+        //     min-height: 400px;
+        //     background-image: url(../img/browser-left.png);
+        //     background-repeat: no-repeat;
+            
+        // }
+        // &-right{
+        //     min-height: 400px;
+        //     background-image: url(../img/browser-right.png);
+        //     background-repeat: no-repeat;
+        // }
+        // &-centr{
+        //     min-height: 482px;
+        //     background-image: url(../img/browser-center.png);
+        //     background-repeat: no-repeat;
+        // }
+        // background-image: url(../img/browser-left.png);
+        // background-image: url(../img/browser-right.png);
+        // background-image: url(../img/browser-center.png);
+    }
+}
+.ad{
+    min-height: 150px;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #211b19, #4e3427);
+    display: flex;
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-h4{
+            @include zagolovok-h4;
+            margin: 0 0 8px 0;
+        }
+        &-h4 span{
+            color: $colortext;
+        }
+        &-txt{
+            @include bodytext;
+            text-align: start;
+            margin: 0;
+        }
+        &-btn{
+            @include btn;
+        }
+        &-btn:hover{
+            @include btn-hover;
+        }
+        &-btn:active{
+            @include btn-activ();
+        }
     }
 }

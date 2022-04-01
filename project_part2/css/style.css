@@ -66,6 +66,10 @@ body {
           box-sizing: border-box;
 }
 
+.container-lite {
+  width: 1230px;
+}
+
 .head {
   margin: 0;
   min-height: 100%;
@@ -247,12 +251,20 @@ body {
   border-radius: 3px;
   color: #fff;
   text-align: center;
-  margin: 52px auto 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
   -webkit-box-shadow: inset 0px -3px 0 0 #736357;
           box-shadow: inset 0px -3px 0 0 #736357;
+  margin: 52px auto 0 auto;
+}
+
+.karusel-zagolovok-btn:hover {
+  background-color: #736357;
+}
+
+.karusel-zagolovok-btn:active {
+  background-color: #998675;
 }
 
 .karusel-dots {
@@ -362,6 +374,10 @@ body {
   background-color: #c7b299;
 }
 
+.idea {
+  background-color: #fbfaf8;
+}
+
 .idea-h2 {
   font-family: raleway;
   font-size: 36px;
@@ -369,7 +385,7 @@ body {
   text-align: center;
   color: #555;
   margin: 0;
-  margin: 83px 0 24px 0;
+  margin: 83px auto 24px auto;
 }
 
 .idea-h3 {
@@ -380,5 +396,90 @@ body {
   color: #8c8c8c;
   line-height: 1.75;
   margin: 0;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.idea-img {
+  min-height: 482px;
+  background-image: url(../img/browser-center.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 40px auto 0 auto;
+}
+
+.ad {
+  min-height: 150px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(to top, #211b19, #4e3427);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ad-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ad-content-h4 {
+  font-family: raleway;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  margin: 0 0 8px 0;
+}
+
+.ad-content-h4 span {
+  color: #555;
+}
+
+.ad-content-txt {
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #8c8c8c;
+  line-height: 1.57;
+  text-align: start;
+  margin: 0;
+}
+
+.ad-content-btn {
+  font-family: raleway;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.64;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: 170px;
+  background-color: #998675;
+  padding: 17px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px -3px 0 0 #736357;
+          box-shadow: inset 0px -3px 0 0 #736357;
+}
+
+.ad-content-btn:hover {
+  background-color: #736357;
+}
+
+.ad-content-btn:active {
+  background-color: #998675;
 }
 /*# sourceMappingURL=style.css.map */
