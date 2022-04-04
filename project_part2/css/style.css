@@ -720,4 +720,124 @@ body {
   color: #c7b299;
   margin: 40px 0 0 0;
 }
+
+.mob {
+  background-color: #fbfaf8;
+}
+
+.mobile {
+  background-image: url(../img/iPhone.png);
+  background-repeat: no-repeat;
+  background-position: 10% bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 695px;
+}
+
+.mobile-content {
+  max-width: 663px;
+}
+
+.mobile-content-h2 {
+  font-family: raleway;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  color: #555;
+  margin: 0;
+  text-align: left;
+}
+
+.mobile-content-txt {
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #8c8c8c;
+  line-height: 1.57;
+  text-align: left;
+  font-size: 16px;
+  margin: 40px 0 45px 0;
+}
+
+.mobile-content-list {
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #8c8c8c;
+  line-height: 1.57;
+  text-align: left;
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 2;
+  margin-left: 50px;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.mobile-content-list-items {
+  background: url("../img/dots-li.png") no-repeat left center;
+  padding-left: 45px;
+}
+
+.figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
+}
+
+.figure-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 140px;
+  min-height: 170px;
+}
+
+.figure-list-value {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 0.75;
+  text-align: center;
+  color: #fff;
+  margin: 30px 0 21px 0;
+}
+
+.figure-list-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c7b299;
+}
+
+.figure-list-svg {
+  fill: #c7b299;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=style.css.map */
