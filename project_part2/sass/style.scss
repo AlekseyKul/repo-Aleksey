@@ -406,6 +406,7 @@ body {
             display: flex;
             flex-direction: column;
             margin-bottom: 30px;
+            position: relative;
             &-h4{
                 font-family: Raleway;
                 font-size: 20px;
@@ -432,7 +433,47 @@ body {
                 top: -25px;
                 left: 19px;
             }
+            &-svg1{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 35%;
+                left: 35%;
+                right: 0;
+                bottom: 0;
+                display:none;
+            }
+            &-svg2{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 35%;
+                left: 55%;
+                right: 0;
+                bottom: 0;
+                display:none;
+            }
+            // &-img{
+            //     display: block;
+            // }
+
         }
+        &-cart:hover .project-carts-cart-img{
+            filter: brightness(50%);
+            
+
+        }
+        &-cart:hover .project-carts-cart-svg1{
+            display: block;
+            
+
+        }
+        &-cart:hover .project-carts-cart-svg2{
+            display: block;
+            
+
+        }
+
     }
     &-btn{
         @include btn;
@@ -572,6 +613,7 @@ body {
             text-transform: uppercase;
             text-align: center;
             color: #c7b299;
+            margin: 0 0 30px 0;
 
 
         }
@@ -579,6 +621,22 @@ body {
             fill: #c7b299;
             align-self: center;
         }
+    }
+    &-list::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    &-list:hover .figure-list-svg{
+        transform: scale(1.2);
+        transition: transform 200ms ease-out;
+    }
+    &-list:hover .figure-list-txt{
+        transform: scale(1.2);
+        transition: transform 200ms ease-out;
     }
 
 }
