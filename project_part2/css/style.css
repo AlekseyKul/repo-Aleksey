@@ -904,4 +904,101 @@ body {
   transition: transform 200ms ease-out;
   transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
 }
+
+.recent-h2 {
+  font-family: raleway;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  color: #555;
+  margin: 0;
+  margin: 81px auto 24px auto;
+}
+
+.recent-txt {
+  font-family: montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #8c8c8c;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.recent-carts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0 0 0;
+}
+
+.recent-cart {
+  width: 370px;
+  min-height: 395px;
+  background-color: #fbfaf8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.recent-cart-box {
+  padding: 30px;
+}
+
+.recent-cart-box-h4 {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  color: #555555;
+  margin: 0 0 14px 0;
+}
+
+.recent-cart-box-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #8c8c8c;
+  margin: 0 0 27px 0;
+}
+
+.recent-cart-box-link {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #c7b299;
+}
+
+.recent-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto;
+}
+
+.recent-arrows-left {
+  border: none;
+  background-color: transparent;
+}
+
+.recent-arrows-right {
+  border: none;
+  background-color: transparent;
+}
 /*# sourceMappingURL=style.css.map */
