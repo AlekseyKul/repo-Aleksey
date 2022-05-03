@@ -1,0 +1,18 @@
+.menu {
+    padding: 0;
+    margin: 0;
+    background: rgb(180, 244, 255);
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.magazin {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(163, 255, 201);
+    min-height: 500px;
+}

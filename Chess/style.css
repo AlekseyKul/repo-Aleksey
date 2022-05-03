@@ -1,0 +1,21 @@
+.ichieka-white {
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(252, 248, 244);
+}
+
+.ichieka-black {
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(110, 57, 3);
+}
+
+.tablestyle {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.ichieka_contur {
+    margin: 0;
+    padding: 15px;
+}
