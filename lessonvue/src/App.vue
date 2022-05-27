@@ -36,7 +36,8 @@ import axios from 'axios';
 import MySelect from './components/UI/MySelect.vue';
 export default {
     components:{
-        PostForm, PostList,
+        PostForm,
+        PostList,
         MyDialog,
         MyButton,
         MySelect
