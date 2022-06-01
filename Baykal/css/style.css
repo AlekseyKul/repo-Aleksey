@@ -31,21 +31,28 @@
     color: #525252;
     text-decoration: none;
 }
-.text-body{
+.mytext-body{
     font-family: 'sourcesanspro';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
+color: #525252;
 
 }
 
 .header {
+    display: block;
     min-height: 80vh;
-    background-image: url(../img/img-baykal-head2.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/img-baykal-head.png);
+    background-repeat: round;
     background-size: cover;
+    
+
 }
+/* section{
+    display: inline-block;
+} */
 
 .logo {
     background-image: url(../img/ico-2baikal.svg);
@@ -84,16 +91,26 @@ line-height: 20px;
     margin: 150px 0 0 190px;
 }
 .info-text{
+    color: white;
     padding: 190px 0;
 }
+.info-text-body{
+    color: white;
+}
 .info-text-h3{
-    /* color: white; */
+    color: white;
     margin: 0 0 30px 0;
 }
 .info-row{
     align-items: center;
 }
 .info-blue{
+    position: absolute;
     background-color: #0D3E87;
     min-height: 650px;
 }
+.info{
+    position: relative;
+    top: 50px;
+}
+
